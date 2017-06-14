@@ -40,7 +40,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
 
 # 配置默认放置 App 的目录
 RUN mkdir -p /app && rm -rf /var/www/html && ln -s /app /var/www/html
-#COPY . /app
+COPY . /app
 ADD 1.tar /app
 WORKDIR /app
 
