@@ -12,6 +12,7 @@ RUN apt-get update \
         apache2 \
         libapache2-mod-php5 \
         php5-mysql \
+        php5-mssql \
         php5-sqlite \
         php5-gd \
         php5-curl \
